@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #fffdfd;
+    background-image: url("../img/wp11383218.gif");
+    background-size: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+    display: block;
+    margin: auto;
+    transform-origin: 45px 22px;
+    animation: moveIt 2.5s ease-in-out infinite;
+}
+
+div.window {
+    background-color: rgba(239, 239, 239, 0.645);
+    min-width: 550px;
+    min-height: 300px;
+    border-radius: 0.8em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+    backdrop-filter: blur(6px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+div.buttons {
+    width: 100%;
+    text-align: left;
+}
+
+div.buttons>div {
+    width: 100%;
+    border-radius: 1em;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    margin: 0.3em;
+}
+
+div.buttons>div:nth-child(1) {
+    background-color: #ff5f57;
+}
+
+div.buttons>div:nth-child(2) {
+    background-color: #febc2e;
+}
+
+div.buttons>div:nth-child(3) {
+    background-color: #28c840;
+}
+
+h1{
+    color: white;
+    display: center;
+    text-decoration: solid;
+    text-shadow: rgb(28 32 93 / 30%) 0px 2px 8px 0px;
+}
+
+div#links {
+    text-align: center;
+    font-size: 300%;
+}
+
+div#links a {
+    transition: opacity 0.2s ease-in-out;
+}
+
+div#links a:hover {
+    opacity: 15%;
+}
+
+div#links a:visited {
+    color: white;
+}
+
+div#links a {
+    color: black;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+@keyframes moveIt {
+
+    0%,
+    100% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-15deg);
+    }
+}
